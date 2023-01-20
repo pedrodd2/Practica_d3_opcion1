@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://d3js.org/d3.v5.min.js'></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Clasificacion ganadores de Mundiales</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Clasificación ganadores de Mundiales</h1>      
+      </header>
+
+
+    <div id="chart"></div>
+    <div class="slidecontainer"></div>
+        <label for="mySlider" id="labelSlider">Seleccione el año de Mundial:</label><br />
+        <input class="slider" type="range" name="mySlider" id=mySlider min="1930" max="2022" step="4" value="2022" list="barras">
+    </div>
+
+    <datalist id="barras">
+        <option class="barra" label="1930"></option>
+        <option class="barra" label="1934"></option>
+        <option class="barra" label="1938"></option>
+        <option class="barra" label="1942"></option>
+        <option class="barra" label="1946"></option>
+        <option class="barra" label="1950"></option>
+        <option class="barra" label="1954"></option>
+        <option class="barra" label="1958"></option>
+        <option class="barra" label="1962"></option>
+        <option class="barra" label="1966"></option>
+        <option class="barra" label="1970"></option>
+        <option class="barra" label="1974"></option>
+        <option class="barra" label="1978"></option>
+        <option class="barra" label="1982"></option>
+        <option class="barra" label="1986"></option>
+        <option class="barra" label="1990"></option>
+        <option class="barra" label="1994"></option>
+        <option class="barra" label="1998"></option>
+        <option class="barra" label="2002"></option>
+        <option class="barra" label="2006"></option>
+        <option class="barra" label="2010"></option>
+        <option class="barra" label="2014"></option>
+        <option class="barra" label="2018"></option>
+        <option class="barra" label="2022"></option>
+      </datalist>
+    <script src="main.js"></script>
+</body>
+</html>

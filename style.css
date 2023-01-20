@@ -1,0 +1,91 @@
+.slidecontainer {
+    width: 800px; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 800px; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+
+  datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: 800px;
+  }
+  
+  option {
+    padding: 0;
+  }
+  
+  input[type="range"] {
+    width: 800px;
+    margin: 0;
+  }
+
+ .barra {
+    text-anchor: end;
+    color: rgb(2, 2, 41);
+ }
+
+.Uruguay {
+  stroke: #75AADB;
+  fill: #75AADB;
+}
+
+.Italy {
+  stroke: #007FFF;
+  fill: #007FFF;
+}
+
+.Germany {
+  stroke: black;
+  fill: black;
+ }
+
+.Brazil {
+  stroke: green;
+  fill: green;
+}
+
+.England {
+  stroke: red;
+  fill: red;
+
+}
+
+.Argentina {
+  stroke: #75AADB;
+  fill: #75AADB;
+}
+
+ 
+.France {
+  stroke: blue;
+  fill: blue;
+}
+
+
+.Spain {
+  stroke: red;
+  fill: red;
+}
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.5;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}
