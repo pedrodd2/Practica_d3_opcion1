@@ -20,7 +20,7 @@ const yAxisGroup = axisGroup.append("g").attr("id", "yAxisGroup")
 
 const x = d3.scaleBand().range([0,width - margin.left - margin.right]).padding(0.1)
 const y = d3.scaleLinear().range([height - margin.bottom - margin.top, 0])// ojo rango invertido
-y.domain([0, 5])
+
 const xAxis = d3.axisBottom().scale(x)
 const yAxis = d3.axisLeft().scale(y).ticks(5)
 
@@ -35,6 +35,7 @@ svg.append("g")
             .tickSize(-width)
             .tickFormat(""))
 
+let maximo = 0
 
 function num_mund(anyo) {
     d3.csv("WorldCup.csv").then(data => {
@@ -57,10 +58,14 @@ function num_mund(anyo) {
                 }
             }
             nest[i].values = cont
+            if (cont > maximo){
+                maximo = cont
+            }
         }
         
-
+        
         x.domain(data.map(d => d.Winner))
+        y.domain([0, maximo])
         
     
         xAxisGroup.call(xAxis)   
